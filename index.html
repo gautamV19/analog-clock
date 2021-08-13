@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div id="main">
-        <div id="outer">
-            <div id="middot"></div>
-            <div id="num"></div>
-            <div id="sec"></div>
-            <div id="hour"></div>
-            <div id="min"></div>
-        </div>
+  <body>
+    <div id="clockContainer">
+      <div id="dot"></div>
+      <div class="hands" id="minute"></div>
+      <div class="hands" id="hour"></div>
+      <div class="hands" id="second"></div>
     </div>
-</body>
-<script src="jquery-3.6.0.js"></script>
-<script src="script.js"></script>
-
+  </body>
+  <script src="jquery-3.6.0.js"></script>
+  <script src="script.js"></script>
 </html>
