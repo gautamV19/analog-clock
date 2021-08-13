@@ -1,0 +1,65 @@
+#main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outer {
+    border: 4px solid white;
+    border-radius: 50%;
+    height: 420px;
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#middot {
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+}
+
+#sec, #min, #hour {
+    position: relative;
+    height: 172px;
+    width: 5px;
+    background-color: white;
+}
+
+#sec {
+    background-color: yellow;
+    top: 90px;
+    right: -87px;
+    /* transition: 60s;
+    transform: rotate(360deg);
+    z-index: 7;
+    opacity: 1; */
+    animation: sec 60s 1;
+}
+
+@keyframes sec {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#min {
+    background-color: pink;
+    top: -90px;
+    right: 90px;
+}
+
+#hour {
+    background-color: lightblue;
+    width: 172px;
+    height: 5px;
+    right: 90px;
+}
+
